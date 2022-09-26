@@ -1,8 +1,0 @@
-EGitJavaStudyJavaStudysrcjava -Djava.system.class.loader=class2.CustomClassLoader class2.ClassLoaderMain
-로드 시작(class2.ClassLoaderMain)
-                        -- by MyClassLoader
-로드 시작(java.lang.Object)
-로드 시작(java.lang.String)
-로드 시작(java.lang.System)
-로드 시작(java.io.PrintStream)
-main is start
