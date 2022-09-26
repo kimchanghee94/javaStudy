@@ -5,10 +5,10 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class ClassLoaderTest extends ClassLoader {
+public class CustomClassLoader extends ClassLoader {
 
 	// 인스턴스가 생성될 때 현재 클래스로더의 부모 클래스로더도 설정해 줘야 한다
-	public ClassLoaderTest(ClassLoader parent) {
+	public CustomClassLoader(ClassLoader parent) {
 	        super(parent);
 	    }
 
