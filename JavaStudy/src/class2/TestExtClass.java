@@ -1,5 +1,10 @@
-/*public class TestExtClass {
-	TestExtClass(){
-		System.out.println("ext class test for PlatformClassLoader");
+package class2;
+public class TestExtClass {
+	public TestExtClass(){
+		System.out.println("TestExtClass default constructor started");
 	}
-}*/
+	
+	public void method() {
+		System.out.println("TestExtClass method is started");
+	}
+}
