@@ -12,12 +12,15 @@ public class ClassLoaderMain {
 
 		System.out.println("========================================>");
 		TestExtClass tec = new TestExtClass();
+		java.sql.Date date = new java.sql.Date(System.currentTimeMillis());
+		System.out.println(date.getClass().getClassLoader());
 		tec.method();
+		System.out.println(tec.getClass().getClassLoader().getParent());
 		System.out.println("<========================================");
 		
 		System.out.println("========================================>");
 		ClassLoader cl = ClassLoaderMain.class.getClassLoader();
-		System.out.println("main print " + cl);
+		System.out.println("main print " + cl.getClass());
 		System.out.println("main print " + cl.getParent());
 		System.out.println("main print " + cl.getParent().getParent());
 		System.out.println("main print " + cl.getParent().getParent().getParent());

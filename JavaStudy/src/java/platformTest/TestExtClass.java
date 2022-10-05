@@ -1,4 +1,5 @@
-package class2;
+package java.platformTest;
+
 public class TestExtClass {
 	public TestExtClass(){
 		System.out.println("TestExtClass default constructor started");
