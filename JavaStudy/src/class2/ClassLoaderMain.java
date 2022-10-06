@@ -11,11 +11,11 @@ public class ClassLoaderMain {
 		System.out.println("main is start");
 
 		System.out.println("========================================>");
-		TestExtClass tec = new TestExtClass();
+		platform.Test.TestExtClass tec = new platform.Test.TestExtClass();
 		java.sql.Date date = new java.sql.Date(System.currentTimeMillis());
 		System.out.println(date.getClass().getClassLoader());
 		tec.method();
-		System.out.println(tec.getClass().getClassLoader().getParent());
+		System.out.println(tec.getClass().getClassLoader());
 		System.out.println("<========================================");
 		
 		System.out.println("========================================>");

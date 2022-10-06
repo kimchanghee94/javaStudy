@@ -1,4 +1,4 @@
-package java.platformTest;
+package platformTmp.Test;
 
 public class TestExtClass {
 	public TestExtClass(){
