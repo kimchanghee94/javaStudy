@@ -8,15 +8,20 @@ public class ClassLoaderMain {
 		 *  대신 jre를 가져와야 하기 때문에 프로젝트안에 jre도 존재해야한다.
 		 *  CMD로 돌릴 경우에는 JAVA_HOME에 있는 lib파일을 가져와 돌린다.
 		 *  */
-		System.out.println("main is start");
 
+		System.out.println("main is start");
 		System.out.println("========================================>");
 		platform.Test.TestExtClass tec = new platform.Test.TestExtClass();
 		java.sql.Date date = new java.sql.Date(System.currentTimeMillis());
 		System.out.println(date.getClass().getClassLoader());
 		tec.method();
 		System.out.println(tec.getClass().getClassLoader());
-		System.out.println("<========================================");
+		System.out.println("<========================================\n");
+		
+		System.out.println("========================================>");
+		Boolean boolFlag = true;
+		System.out.println(boolFlag.getClass().getClassLoader());
+		System.out.println("<========================================\n");
 		
 		System.out.println("========================================>");
 		ClassLoader cl = ClassLoaderMain.class.getClassLoader();
@@ -24,12 +29,12 @@ public class ClassLoaderMain {
 		System.out.println("main print " + cl.getParent());
 		System.out.println("main print " + cl.getParent().getParent());
 		System.out.println("main print " + cl.getParent().getParent().getParent());
-		System.out.println("<========================================");
+		System.out.println("<========================================\n");
 		
 		System.out.println("========================================>");
 		System.out.println(System.getProperty("java.class.path"));
 		System.out.println(ClassLoader.getPlatformClassLoader());
-		System.out.println("<========================================");
+		System.out.println("<========================================\n");
 		
 		
 		System.out.println("========================================>");
@@ -38,6 +43,8 @@ public class ClassLoaderMain {
 		
 		ac.Amethod();
 		bc.Bmethod();
-		System.out.println("<========================================");
+		System.out.println(ac.getClass().getClassLoader());
+		System.out.println(ac.getClass().getClassLoader().getParent());
+		System.out.println("<========================================\n");
 	}
 }
