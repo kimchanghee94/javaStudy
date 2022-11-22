@@ -46,7 +46,8 @@ public class ClassLoaderMain {
 		
 		System.out.println("========================================>");
 		System.out.println(System.getProperty("java.class.path"));
-		System.out.println(ClassLoader.getPlatformClassLoader());
+		//jdk 1.9부터 사용 가능
+		//System.out.println(ClassLoader.getPlatformClassLoader());
 		System.out.println("<========================================\n");
 		
 		

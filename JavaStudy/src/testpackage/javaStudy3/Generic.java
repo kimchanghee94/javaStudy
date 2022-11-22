@@ -20,6 +20,9 @@ public class Generic {
 		
 		EnumTest et = new EnumTest();
 		et.move(Direction.EAST);
+		
+		ArrayList<Integer> al = new ArrayList<>();
+		al.add(3);
 	}
 }
 
