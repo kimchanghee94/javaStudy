@@ -27,5 +27,3 @@ public class ThreadGroupTest {
 		main.list();
 	}
 }
-
-
